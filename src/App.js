@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <form>
+        <img src="https://green.cdn.energy/branding/logo-r.svg" className="green-image" />
+        <h2>Example login screen</h2>
+        <h6 className="grey-highlight">Getting started with green</h6>
+        <h6 className="new-line grey-highlight">Email Address</h6>
+        <input type="text" placeholder />
+        <label className="container">
+          <input className="check-me" type="checkbox" defaultChecked="checked" /><h6>Remember this device</h6></label>
+        <input type="submit" defaultValue="Sign In" className="sign-in-button" />
+      </form>
     </div>
   );
 }
